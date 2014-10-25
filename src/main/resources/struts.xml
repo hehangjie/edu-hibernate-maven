@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+
+	<package name="demo" namespace="/demo" extends="struts-default">
+
+		<!-- CRUD 
+		<action name="personCrud_*" class="example.action.PersonCrudAction"
+			method="{1}">
+			<result>/example/personCrud.jsp</result>
+		</action>
+		-->
+		<action name="helloworld" class="edu.demo.action.HelloAction">
+			<result name="success">/hello.jsp</result>
+		</action>
+
+	</package>
+</struts>

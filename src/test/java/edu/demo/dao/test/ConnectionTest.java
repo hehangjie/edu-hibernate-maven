@@ -1,7 +1,5 @@
 package edu.demo.dao.test;
 
-import static org.junit.Assert.fail;
-
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

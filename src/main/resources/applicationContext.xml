@@ -38,32 +38,6 @@
 		<property name="password">
 			<value>${jdbc.password}</value>
 		</property>
-		<!--  
-		<property name="acquireIncrement">
-			<value>3</value>
-		</property>
-		<property name="initialPoolSize">
-			<value>3</value>
-		</property>
-		<property name="minPoolSize">
-			<value>2</value>
-		</property>
-		<property name="maxPoolSize">
-			<value>50</value>
-		</property>
-		<property name="maxIdleTime">
-			<value>600</value>
-		</property>
-		<property name="idleConnectionTestPeriod">
-			<value>900</value>
-		</property>
-		<property name="maxStatements">
-			<value>100</value>
-		</property>
-		<property name="numHelperThreads">
-			<value>10</value>
-		</property>
-		-->
 	</bean>
 
 	<bean id="sessionFactory"
@@ -78,13 +52,6 @@
 				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
 				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2dll}</prop>
 				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
-				<!-- 
-				<prop key="hibernate.format_sql">true</prop>
-				<prop key="hibernate.use_sql_comments">false</prop>
-				<prop key="hibernate.statement_cache.size">0</prop>
-				<prop key="hibernate.jdbc.fetch_size">100</prop>
-				<prop key="hibernate.jdbc.batch_size">100</prop>
-				 -->
 			</props>
 		</property>
 		<property name="dataSource">
